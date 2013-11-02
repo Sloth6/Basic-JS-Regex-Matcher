@@ -5,16 +5,18 @@ This is a simple JS based Regular Expression validator. The Validator accepts 3 
 #Installation
 Include in your html document:
 
-`<script type="opensource1.js"></script>`
+>`<script type="opensource1.js"></script>`
 
 #Usage
+>`doesMatch(pattern, word)`
+
+>Where pattern is is the Regular expression you are matching against and word is an input string.
 
 #Examples
-
-#Configuration
+>`doesMatch(ab*cd.t', 'abksdhfkjdsfcdcdcdgt');`
 
 ###Fine Print
-Current Version: 0.0.1
-Download from github: github.com/sloth6/Intro-to-Open-Source
-License: GNU 3.0
-Compatibility: Should work with all popular JS based frameworks and browsers.
+>Current Version: 0.0.1
+>Download from github: github.com/sloth6/Intro-to-Open-Source
+>License: GNU 3.0
+>Compatibility: Should work with all popular JS based frameworks and browsers.
