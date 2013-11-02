@@ -14,6 +14,7 @@ Include in your html document:
 
 #Examples
 >`doesMatch(ab*cd.t', 'abksdhfkjdsfcdcdcdgt');`
+>`doesMatch('ab.*cd***d', 'abskjfhcdlcdsjddd'))`
 
 ###Fine Print
 >Current Version: 0.0.1
