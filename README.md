@@ -16,7 +16,7 @@ Include in your html document:
 >`doesMatch(ab*cd.t', 'abksdhfkjdsfcdcdcdgt');`
 
 ###Fine Print
->Current Version: 0.0.1
->Download from github: github.com/sloth6/Intro-to-Open-Source
->License: GNU 3.0
+>Current Version: 0.0.1 \n
+>Download from github: github.com/sloth6/Intro-to-Open-Source \n
+>License: GNU 3.0 \n
 >Compatibility: Should work with all popular JS based frameworks and browsers.
