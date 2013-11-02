@@ -43,7 +43,6 @@ function testDoesMatch() {
     assert (doesMatch('.*.*.', 'abc'), '.*.*.');
     console.log("All tests passed!");
 }
-<<<<<<< HEAD
 
 function assert(condition, message) {
     if (!condition) {
@@ -52,6 +51,3 @@ function assert(condition, message) {
 }
 
 testDoesMatch();
-=======
-testDoesMatch();
->>>>>>> 12b9d576afc94570329d1970ed30e3cbea661c91
