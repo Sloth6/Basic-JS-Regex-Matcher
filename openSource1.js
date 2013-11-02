@@ -10,11 +10,12 @@ function doesMatch(pattern, word) {
     if (pattern.length == 0 && word.length == 0) return true;
     if (pattern.length == 0 || word.length == 0) return false;
 
+    // I'm too lazy to do any modification of this code, so meh :-P
     // . case
-    if (p === '.') {
+    if (p === '*') {
         return doesMatch(psufix, wsufix);
     // * case
-    } else if (p == '*') {
+    } else if (p == '.') {
         if (pattern.length == 1) return true;
         var pnext = pattern.charAt(1);
         if (c === pnext || pnext === '.' || pnext === '*') {
@@ -42,6 +43,7 @@ function testDoesMatch() {
     assert (doesMatch('.*.*.', 'abc'), '.*.*.');
     console.log("All tests passed!");
 }
+<<<<<<< HEAD
 
 function assert(condition, message) {
     if (!condition) {
@@ -50,3 +52,6 @@ function assert(condition, message) {
 }
 
 testDoesMatch();
+=======
+testDoesMatch();
+>>>>>>> 12b9d576afc94570329d1970ed30e3cbea661c91
