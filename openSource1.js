@@ -34,16 +34,19 @@ function doesMatch(pattern, word) {
 }
 
 function testDoesMatch() {
-  if (testr()) console.log("All tests passed!"); //yaaaa you rock :)
-  else console.log("You Failed!"); // :'(
-  function testr () {
-    if (!doesMatch('ab*cd.t', 'abksdhfkjdsfcdcdcdgt')) return false;
-    if (!doesMatch('*.*', 'lskjfhldsjhflsa')) return false;
-    if (doesMatch('.', 'lskjfhldsjhflsa')) return false;
-    if (!doesMatch('.**', 'lskjfhldsjhflsa')) return false;
-    if (!doesMatch('ab.*cd***d', 'abskjfhcdlcdsjddd')) return false;
-    if (!doesMatch('.*.*.', 'abc')) return false;
-    return true;
-  }
+    assert (doesMatch('ab*cd.t', 'abksdhfkjdsfcdcdcdgt'), 'ab*cd.t');
+    assert (doesMatch('*.*', 'lskjfhldsjhflsa'), '*.*');
+    assert (!doesMatch('.', 'lskjfhldsjhflsa'), '.');
+    assert (doesMatch('.**', 'lskjfhldsjhflsa'), '.**');
+    assert (doesMatch('ab.*cd***d', 'abskjfhcdlcdsjddd'), 'ab.*cd***d');
+    assert (doesMatch('.*.*.', 'abc'), '.*.*.');
+    console.log("All tests passed!");
 }
+
+function assert(condition, message) {
+    if (!condition) {
+        throw message || "Assertion failed";
+    }
+}
+
 testDoesMatch();
